@@ -1,0 +1,368 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+
+body{
+    overflow:  hidden scroll;
+}
+
+/*Navigation Bar Starts here*/
+
+nav{
+    height: 56px;
+    width: 100%;
+    padding: 1rem 4rem;
+    display: flex;
+    justify-content: space-between;
+
+    background-color: #FFF;
+}
+
+nav .nav-left, nav .nav-middle, nav .nav-right{
+    display: flex;
+    align-items: center;
+
+}
+
+nav .nav-left a > img{
+    
+    width: 26.6px;
+}
+
+nav .nav-middle a{
+    text-decoration: none;
+    color: #333;
+    padding: 0px;
+    margin: 0px 20px;
+    font-size: 16px;
+}
+
+nav .nav-middle a:active{
+    color: #3371f2;
+}
+
+nav .nav-right a{
+    text-decoration: none;
+    color: #FFF;
+    background-color: #3371f2;
+    font-size: 16px;
+    margin: 10px;
+    padding: 10px 16px;
+    border-radius: 8px;
+
+}
+
+nav .nav-right a:active{
+    background-color:#6492f7;
+}
+
+
+/*Top Panel*/
+
+.container{
+    background: #FFF;
+    display: block;
+}
+
+.Top-panel{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    left: 50px;
+}
+
+.Mask{
+    position: absolute;
+    width: 1110px;
+    height: 288px;
+    left: 165px;
+    top: 171px; 
+
+    background: #C4C4C4;
+    border-radius: 16px;
+}
+
+.BG{
+    position: absolute;
+    width: 1110px;
+    height: 288px;
+    left: 165px;
+    top: 171px;
+
+    background: #3371F2;
+    border-radius: 16px;
+}
+
+.Vector-1{
+    position: absolute;
+    width: 1110px;
+    height: 288px;
+    left: 165px;
+    top: 171px;
+
+    background: #FFFFFF;
+    opacity: 0.15;
+    border-radius: 50%;
+}
+
+.Vector-2{
+    position: absolute;
+    width: 1110px;
+    height: 288px;
+    left: 165px;
+    top: 171px;
+
+    background: #FFFFFF;
+    opacity: 0.15;
+    border-radius: 30%;
+}
+
+.Content h1{
+    position: static;
+    width: 460px;
+    height: 108px;
+    left: 0px;
+    top: 0px;
+
+    font-style: normal;
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 54px;
+
+    font-feature-settings: 'salt' on, 'liga' off;
+
+    color: #FFF;
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 32px 0px;
+
+}
+
+.Content{
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+
+    position: absolute;
+    width: 445px;
+    height: 108px;
+    left: 499px;
+    top: 230px;
+
+}
+
+/*Middle Tabs or Middle Panel*/
+
+.middle-panel{
+    position: absolute;
+    align-items: center;
+    display: flex;
+    top: 520px;
+    left: 230px;
+}
+
+.middle-panel ul > li{
+    display: inline-flex;
+    list-style: none;
+    font-size: 14px;
+    margin: 25px;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.middle-panel ul li a{
+    color:#547FF3;
+    font-weight: 500;
+    padding: 10px 15px;
+    border: 1px solid #547FF3;
+    box-sizing: border-box;
+    border-radius: 8px;
+    text-decoration: none;
+}
+
+.middle-panel ul li a:hover{
+    background: #3371f2;
+    color: #FFF;
+    transition: .5s;
+}
+
+/*Bottom Panel*/
+
+.bottom-panel{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.bottom-panel .video-section{
+    position: absolute;
+    width: 100%;
+    height: 640px;
+    max-width: 400px;
+    border-radius: 8px;
+    background-color: #FFF;
+    overflow: none;
+}
+
+.video-section::-webkit-scrollbar{
+    display: none;
+}
+
+.video-section{
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    position: absolute;
+    top: 580px;
+    left: 150px;
+}
+
+#C2{
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    position: absolute;
+    top: 580px;
+    left: 570px;
+}
+
+#C3{
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    position: absolute;
+    top: 580px;
+    left: 990px; 
+}
+
+.bottom-panel .video-section .videos > video{
+    height: 100%;
+
+}
+
+.videos{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    padding: 8px;
+    background-color: #FFF;
+}
+
+.videos video{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.icon-section{
+    position: absolute;
+    width: 32px;
+    height: 208.04px;
+    left: 346px;
+    top: 257px;
+}
+
+
+.icon-section .material-icons{
+    font-size: 23.33px;
+    cursor: pointer;
+    color: #FFF;
+}
+
+.icon-buttons > p{
+    color: #FFF;
+}
+
+.icon-buttons{
+    padding: 8px;
+}
+
+.videoFooter{
+    position: absolute;
+    width: 400px;
+    height: 139.8px;
+    left: 0px;
+    top: 500.2px;
+    color: #FFF;
+    display: flex;
+}
+
+.videoFooter .price-button > button{
+    position: absolute;
+    width: 96px;
+    height: 40px;
+    left: 292px;
+    top: 10px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 8px;
+
+    background: #FFF;
+    border-radius: 8px;
+
+    outline: none;
+
+}
+
+.videoFooter .price-button button > p{
+    position: static;
+    width: 78px;
+    height: 24px;
+    left: 0px;
+    top: 0px;
+
+    font-size: 16px;
+    line-height: 150%;
+    color: #31A05F;
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0px 0px;
+}
+
+.videoFooter .videoFooter-text {
+    position: absolute;
+    width: 332px;
+    height: 68px;
+    left: 16px;
+    top: 60px;
+}
+
+.videoFooter .videoFooter-text h3{
+    font-weight: 900;
+    font-size: 17px;
+    line-height: 21px;
+    color: #FFF;
+}
+
+.videoFooter .videoFooter-text p{
+    font-size: 15px;
+    font-weight: normal;
+    line-height: 19px;
+    color: rgba(255, 255, 255, 0.9);
+
+
+}
+
+@media(max-width: 400px){
+    .video-section {
+        width: 100%;
+        height: 100%;
+        max-width: 100%;
+        border-radius: 0px;
+
+    }
+
+}

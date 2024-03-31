@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stores near by</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">      
+    <link rel="stylesheet" href="assets/css/StoresNearBy.css">
+    <link rel="javascript" href="main.js">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="icon" type="Fevicon" href="assets/img/Fevicon.png">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+</head>
+<body>
+    
+    <nav>
+        <div class="nav-left">
+            <a href="Videos.html"><img src="assets/img/Fevicon.png" alt="Logo"></a>
+        </div>
+
+        <div class="nav-middle">
+            <a href="#">Liked</a>
+            <a href="Videos.html">Videos</a>
+            <a href="#">Home</a>
+            <a href="#">Stores near by</a>
+            <a href="#">How to become a seller?</a>
+        </div>
+
+        <div class="nav-right">
+            <a href="#">Become a seller</a>
+        </div>
+    </nav>
+
+    <div id="map"></div>
+    <script>
+        function initMap() {
+            var location = {lat: 17.385, lng: 78.486};
+            var map = new google.maps.Map(document.getElementById("map"), {
+                zoom: 4, 
+                center: location
+            }); 
+            var marker = new google.maps.Marker({
+                position: location,
+                map: map
+            });
+        }   
+    </script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAus6FJPVBu7cIW7L81h_S2Yv-D48rnDbY&callback=initMap"></script>  
+
+    <div class="container-fluid">
+        <div class="last-panel">
+            <h1>Near By Stores</h1>
+            <p id="para">More and More local stores are setting up their stores on showcase</p>
+            <div class="img_R11">
+                <img id="image" src="assets/img/Clothes.jpg" alt="Products">
+                <div class="imgFooter">
+                    <div class="imgFooter_text">
+                        <p class="timings">Open :10 am - 10 pm </p>
+                        <h3 class="storeName">Geetanjali Clothings store</h3>
+                    </div>
+                    <div class="icons">
+                        <div class="icon-buttons">
+                            <span class="material-icons">whatsapp</span>
+                        </div>
+                        <div class="icon-buttons">
+                            <span class="material-icons">place</span>
+                        </div>
+                    </div>      
+                </div>
+            </div>
+
+            <div class="img_R12">
+                <img id="image" src="assets/img/Clothes.jpg" alt="Products">
+                <div class="imgFooter">
+                    <div class="imgFooter_text">
+                        <p class="timings">Open :10 am - 10 pm </p>
+                        <h3 class="storeName">Geetanjali Clothings store</h3>
+                    </div>
+                    <div class="icons">
+                        <div class="icon-buttons">
+                            <span class="material-icons">whatsapp</span>
+                        </div>
+                        <div class="icon-buttons">
+                            <span class="material-icons">place</span>
+                        </div>
+                    </div>      
+                </div>
+            </div>
+
+            <div class="img_R13">
+                <img id="image" src="assets/img/Clothes.jpg" alt="Products">
+                <div class="imgFooter">
+                    <div class="imgFooter_text">
+                        <p class="timings">Open :10 am - 10 pm </p>
+                        <h3 class="storeName">Geetanjali Clothings store</h3>
+                    </div>
+                    <div class="icons">
+                        <div class="icon-buttons">
+                            <span class="material-icons">whatsapp</span>
+                        </div>
+                        <div class="icon-buttons">
+                            <span class="material-icons">place</span>
+                        </div>
+                    </div>      
+                </div>
+            </div>
+
+            <div class="img_R14">
+                <img id="image" src="assets/img/Clothes.jpg" alt="Products">
+                <div class="imgFooter">
+                    <div class="imgFooter_text">
+                        <p class="timings">Open :10 am - 10 pm </p>
+                        <h3 class="storeName">Geetanjali Clothings store</h3>
+                    </div>
+                    <div class="icons">
+                        <div class="icon-buttons">
+                            <span class="material-icons">whatsapp</span>
+                        </div>
+                        <div class="icon-buttons">
+                            <span class="material-icons">place</span>
+                        </div>
+                    </div>      
+                </div>
+            </div>
+
+            <!---Second row-->
+
+            <div class="img_R21">
+                <img id="image" src="assets/img/Clothes.jpg" alt="Products">
+                <div class="imgFooter">
+                    <div class="imgFooter_text">
+                        <p class="timings">Open :10 am - 10 pm </p>
+                        <h3 class="storeName">Geetanjali Clothings store</h3>
+                    </div>
+                    <div class="icons">
+                        <div class="icon-buttons">
+                            <span class="material-icons">whatsapp</span>
+                        </div>
+                        <div class="icon-buttons">
+                            <span class="material-icons">place</span>
+                        </div>
+                    </div>      
+                </div>
+            </div>
+
+            <div class="img_R22">
+                <img id="image" src="assets/img/Clothes.jpg" alt="Products">
+                <div class="imgFooter">
+                    <div class="imgFooter_text">
+                        <p class="timings">Open :10 am - 10 pm </p>
+                        <h3 class="storeName">Geetanjali Clothings store</h3>
+                    </div>
+                    <div class="icons">
+                        <div class="icon-buttons">
+                            <span class="material-icons">whatsapp</span>
+                        </div>
+                        <div class="icon-buttons">
+                            <span class="material-icons">place</span>
+                        </div>
+                    </div>      
+                </div>
+            </div>
+
+            <div class="img_R23">
+                <img id="image" src="assets/img/Clothes.jpg" alt="Products">
+                <div class="imgFooter">
+                    <div class="imgFooter_text">
+                        <p class="timings">Open :10 am - 10 pm </p>
+                        <h3 class="storeName">Geetanjali Clothings store</h3>
+                    </div>
+                    <div class="icons">
+                        <div class="icon-buttons">
+                            <span class="material-icons">whatsapp</span>
+                        </div>
+                        <div class="icon-buttons">
+                            <span class="material-icons">place</span>
+                        </div>
+                    </div>      
+                </div>
+            </div>
+
+            <div class="img_R24">
+                <img id="image" src="assets/img/Clothes.jpg" alt="Products">
+                <div class="imgFooter">
+                    <div class="imgFooter_text">
+                        <p class="timings">Open :10 am - 10 pm </p>
+                        <h3 class="storeName">Geetanjali Clothings store</h3>
+                    </div>
+                    <div class="icons">
+                        <div class="icon-buttons">
+                            <span class="material-icons">whatsapp</span>
+                        </div>
+                        <div class="icon-buttons">
+                            <span class="material-icons">place</span>
+                        </div>
+                    </div>      
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>
